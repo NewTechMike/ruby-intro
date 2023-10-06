@@ -1,6 +1,6 @@
 
-def add
-   1
+def add num
+   num
 end 
 
-puts add + add
+puts add(2) + add(3)
