@@ -43,4 +43,12 @@ def to_do_week day
   end 
 end
 
+def double_to_100 num
+  while num < 100
+    num = num * 2
+    puts num 
+  end 
+  return num 
+end
+
 binding.pry
