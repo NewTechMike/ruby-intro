@@ -20,4 +20,8 @@ def hows_the_weather(temp)
   end
 end
 
+def calculator
+  puts "testing"
+end
+
 binding.pry
