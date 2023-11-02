@@ -20,8 +20,14 @@ def hows_the_weather(temp)
   end
 end
 
-def calculator
-  puts "testing"
+def calculator(op, num1, num2)
+  case op 
+  when "+" then return num1 + num2
+  when "-" then return num1 - num2
+  when "/" then return num1 / num2
+  when "*" then return num1 * num2
+  else "Invalid Operand"
+  end
 end
 
 binding.pry
