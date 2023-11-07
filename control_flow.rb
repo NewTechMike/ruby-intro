@@ -30,4 +30,46 @@ def calculator(op, num1, num2)
   end
 end
 
+def fizzbuzz(num)
+  if (num % 3 == 0 && num % 5 == 0)
+    return "Fizzbuzz"
+  elsif (num % 5 == 0)
+    return "Buzz"
+  elsif (num % 3 == 0 )
+    return "Fizz"
+  else 
+    return num
+  end
+end
+
+
+def w_loop
+  i = 0
+  while i < 5
+    puts "Looping"
+    i += 1
+  end
+end
+
+def u_loop
+  counter = 0
+  until counter == 10
+    puts "#{counter}, Counting!"
+    counter += 1
+  end
+end
+
+def t_loop
+  10.times do |i|
+    puts "Looping"
+    puts "i is: #{i}"
+  end 
+end 
+
+def e_loop
+  (1..20).each do |num|
+    puts num
+  end
+end 
+
 binding.pry
