@@ -10,13 +10,32 @@ def happy_new_year
 end
 
 def reverse_string(str)
-  puts str
-  str2 = [""]
-  str.split("").each do |i|
-    puts str2.push(i)
-  end
-
-  return str.reverse
+  reverse = []
+  split_str = str.split("")
+  str.size.times {
+    reverse << split_str.pop
+  }
+  puts reverse.join
+  return reverse.join
 end 
-#continue working on reversing the string
+
+def fizzbuzz_printer
+  i = 1
+  while i < 100
+    if(i % 3 == 0 && i % 5 == 0 )
+      puts "Fizzbuzz"
+      i += 1
+    elsif(i % 3 == 0)
+      puts "Fizz"
+      i += 1
+    elsif(i % 5 == 0)
+      puts "Buzz"
+      i += 1
+    else
+      puts i
+      i += 1
+    end 
+  end
+end
+
 binding.pry
