@@ -61,8 +61,19 @@ books = [
   }
 ]
 #each 
-books.each do |b|
-  puts b  
+
+  books.each do |b|
+    puts b  
+  end
+ 
+
+def temp
+  #loop from 1 - 10 just because
+  i = 0
+  while(i < 10)
+    i += 1
+  end
+  #body of method
 end
 
 binding.pry
