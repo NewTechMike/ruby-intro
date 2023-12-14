@@ -76,4 +76,11 @@ def temp
   #body of method
 end
 
+
+def temp
+  i = 0
+  j = i + 1
+  k = 10 + j
+end
+
 binding.pry
