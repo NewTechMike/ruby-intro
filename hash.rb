@@ -61,11 +61,29 @@ books = [
   }
 ]
 #each 
-
   books.each do |b|
-    puts b  
+    #binding.pry
+    #puts b  
   end
  
+#collect
+titles = books.collect {|b| b[:title]}
+
+
+#puts titles 
+
+#select 
+cheaper = books.select {|b| b[:price] < 12}
+
+
+#find
+author = books.find {|b| b[:author] == "Goodkind"}
+
+#sum 
+total = books.sum {|b| b[:price]}
+
+#max
+best_book = books.max {|b| b[:rating]}
 
 def temp
   #loop from 1 - 10 just because
@@ -83,4 +101,4 @@ def temp
   k = 10 + j
 end
 
-binding.pry
+#binding.pry
