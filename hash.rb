@@ -95,10 +95,11 @@ def temp
 end
 
 
-def temp
+def temp2
   i = 0
   j = i + 1
   k = 10 + j
+  puts i, j, k
 end
 
-#binding.pry
+binding.pry
