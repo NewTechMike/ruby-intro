@@ -102,4 +102,23 @@ def temp2
   puts i, j, k
 end
 
+
+book = {
+  title: "Intro to Ruby", 
+  price: 23.29,
+  author: "John Elder",
+  publisher: "codemy.com",
+  rating: 3.5,
+  description: "Great intro to ruby"
+}
+
+#Key + Value
+#book.each{|b| binding.pry}
+#Just Key
+#book.each_key{|b| binding.pry}
+
+#Just Values
+#book.each_value{|b| binding.pry}
+
+ant = book.select{ |k,v| v=="John Elder"}
 binding.pry
