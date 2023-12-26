@@ -15,3 +15,31 @@ even = ["this", "is", "ruby"].map.with_index do |str, index|
   end
 end
  even
+
+users = [{ name: "Duane", phone: "555-555-5555"}, {name: "Liza", phone: "555-555-5556"}]
+new_users = users.map do |user|
+  "Name: #{user[:name]} | Phone: #{user[:phone]}"  
+end
+
+#puts new_users
+
+set1 = [1, 2, 3]
+set2 = [1, 2, 3]
+
+new_set1 = set1.map do |i|
+  i * 2
+end 
+#puts "Set1: ",  new_set1
+new_set2 = set2.collect do |i|
+  i * 2
+end 
+#puts "Set2: ",  new_set2
+
+
+set3 = [1, 2, 3, 4, 5]
+new_set3 = set3.filter do |n| 
+  n % 2 === 0
+end
+
+puts new_set3
+#binding.pry
