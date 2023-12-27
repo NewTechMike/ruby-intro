@@ -37,9 +37,33 @@ end
 
 
 set3 = [1, 2, 3, 4, 5]
-new_set3 = set3.filter do |n| 
-  n % 2 === 0
+
+set3.filter do |n| 
+  n % 2 == 0
 end
 
-puts new_set3
+#puts new_set3
+
+(1..10).find_all { |i| i % 3 === 0 } 
+set4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+set4.find_all { |i| i % 3 === 0 } 
+
+set4.select { |num| num.even? }
+
+words = ["give", "nil", "it", "nil", "your", "nil", "best", "shot"]
+new_words = []
+filtered_words = words.filter do |word|
+    if word != "nil"
+      new_words << word
+    end
+   #binding.pry
+end
+
+capped_words = filtered_words.map do |word|
+  puts word.capitalize
+end
+
+puts "Break"
+puts words.filter { |word| word != "nil"}.map(&:capitalize)
 #binding.pry

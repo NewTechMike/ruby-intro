@@ -60,6 +60,12 @@ books = [
     description: "Intro in to Kingkiller"
   }
 ]
+
+#books.sort_by do |title|
+ 
+#books[:title]
+#end
+
 #each 
   books.each do |b|
     #binding.pry
