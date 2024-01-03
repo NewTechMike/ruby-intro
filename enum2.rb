@@ -29,9 +29,22 @@ end
 
 #define method that outputs heat level as 🌶️
 def print_spicy_foods
-  chili = spicy_foods.each do |food, heat|
-    heat
+  spicy_foods.each do |food, heat|
+    food[:heat_level] = ("🌶️" * food[:heat_level])
+    food
   end 
 end
 
-puts print_spicy_foods
+#puts print_spicy_foods
+
+#define method to return Cuisine 
+
+def get_spicy_food_by_cuisine(hash, country)
+  puts hash
+  puts country
+  hash.find do |food|
+    food[:cuisine] == country
+  end
+end 
+
+#puts get_spicy_food_by_cuisine(spicy_foods, "Thai")
