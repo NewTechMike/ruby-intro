@@ -38,7 +38,6 @@ end
 #puts print_spicy_foods
 
 #define method to return Cuisine 
-
 def get_spicy_food_by_cuisine(hash, country)
   puts hash
   puts country
@@ -48,3 +47,10 @@ def get_spicy_food_by_cuisine(hash, country)
 end 
 
 #puts get_spicy_food_by_cuisine(spicy_foods, "Thai")
+
+#define method that returns sorted array by heat
+def sort_by_heat
+  spicy_foods.sort_by { |food| food[:heat_level]}
+end
+
+puts sort_by_heat
