@@ -53,4 +53,12 @@ def sort_by_heat
   spicy_foods.sort_by { |food| food[:heat_level]}
 end
 
-puts sort_by_heat
+#puts sort_by_heat
+
+#define method that outputs only food with 
+#heat level higher than 5 with Chilis as heat level
+def print_spiciest_foods(foods)
+  print_spicy_foods
+end 
+
+puts print_spiciest_foods(spicy_foods)
