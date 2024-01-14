@@ -7,7 +7,7 @@ require "pry"
 def five_dollars
   i = 1
   total = 0
-  grand_total = 0
+   grand_total = 0
   while i <= 52 do 
     puts "Week #{i} | Total: #{total}"
     total += 5
@@ -18,7 +18,7 @@ def five_dollars
   puts grand_total
 end 
 
-#five_dollars
+five_dollars
 
 #define a method that calculates saving .25 cents everyday
 #and adding .25 daily
@@ -36,4 +36,4 @@ def quarters
   puts grand_total
 end 
 
-quarters
+#quarters
