@@ -78,4 +78,7 @@ def retrieve_last_element_from_array(arr)
   arr[(arr.length-1)]
 end
 
-puts retrieve_last_element_from_array(small)
+#puts retrieve_last_element_from_array(small)
+
+def elements 
+end
