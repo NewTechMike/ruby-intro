@@ -8,11 +8,16 @@ end
 
 def batch_badge_creator(list)
   i = 0
-  while i <= list.length 
-    puts list[i]
+  arr = []
+  while i <  list.length 
+    arr << badge_maker(list[i])
     i+=1
     #binding.pry
   end
+  puts arr
 end
 
-puts batch_badge_creator(["Bob", "Steve"])
+#puts batch_badge_creator(["Bob", "Steve"])
+
+def assign_rooms(list)
+end 
