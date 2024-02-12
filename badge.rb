@@ -19,5 +19,10 @@ end
 
 #puts batch_badge_creator(["Bob", "Steve"])
 
+names = ["Bob", "Steve"]
+
 def assign_rooms(list)
+  binding.pry
 end 
+
+puts assign_rooms(names)
