@@ -26,3 +26,11 @@ def assign_rooms(list)
 end 
 
 puts assign_rooms(names)
+
+def matrix
+  i = []
+  j = []
+  x = 1
+  y = 5
+  
+end 
