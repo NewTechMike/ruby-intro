@@ -32,5 +32,6 @@ def matrix
   j = []
   x = 1
   y = 5
-  
+  puts i, j, x, y
 end 
+
