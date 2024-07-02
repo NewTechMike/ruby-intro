@@ -22,10 +22,17 @@ end
 names = ["Bob", "Steve"]
 
 def assign_rooms(list)
-  binding.pry
+  i = 0
+  rooms = []
+  while i < list.length  
+    rooms << "Hello, #{list[i]}. You are in room #{i+1}"
+    i+=1
+    #binding.pry
+  end 
+  puts rooms
 end 
 
-puts assign_rooms(names)
+#puts assign_rooms(names)
 
 def matrix
   i = []
