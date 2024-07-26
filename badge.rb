@@ -42,3 +42,10 @@ def matrix
   puts i, j, x, y
 end 
 
+def something
+  s = "something"
+  o = "on"
+  sc = "screen"
+  puts s, o, sc 
+end
+
