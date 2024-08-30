@@ -49,3 +49,8 @@ def something
   puts s, o, sc 
 end
 
+def another_thing
+  c1 = "Yellow"
+  c2 = "Blue"
+end
+
